@@ -1,0 +1,255 @@
+body {
+    font-family: poppins, sans-serif;
+    color: darkolivegreen;
+    line-height: 1.5;
+    margin: 0;
+    padding: 10px;
+
+    
+}
+
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    line-height: 1.1;
+
+}
+
+
+span {
+    color: black;
+    font-family: poppins, sans-serif;
+    font-weight: 900;
+}
+
+
+.nav {
+    text-align: right;
+   
+}
+
+
+
+.nav ul {
+    list-style: none;
+    
+}
+
+
+.nav li {
+    display: inline-block;
+    padding: 0px 70px;
+    position: relative; 
+}
+
+
+.nav a button {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+
+.about {
+    background-color: #167caf;
+    background-image: url("images/clining\ equipment.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:rgb(240, 233, 233);
+    text-align: center;
+    background-blend-mode: multiply;
+    background:min-width: 320px;
+    padding-top: 100px;
+    padding-bottom: 500px;
+   
+    
+
+}
+
+
+
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px;
+
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.why {
+    padding: 50px;
+    background-color: #f5f5f5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+
+.why img {
+    max-width: 100%;
+    border-radius: 12px;
+    width: 400px;
+    padding:15px 10px;
+    display: flex;
+}
+
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+button {
+    
+    color: white;
+    padding: 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background-color: rgb(6, 65, 85);
+    
+    
+    
+}
+
+
+footer {
+    background-color: #72aeeb;
+    color: wheat;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+
+
+}
+
+
+
+
+
+.address,a{
+    font-style: normal;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: black;
+}
+
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.social-media a {
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 64px;
+    width: 64px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.social-media a svg {
+    height: 32px;
+
+}
+
+.social-media a::before {
+    content: attr(social-media);
+    position: absolute;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    padding: 0.5px 1em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-60px) rotate(25deg);
+    opacity: 0;
+    transition: 200ms cubic-bezier(.42, 0, 44, 1.68);
+}
+
+.social-media a:hover {
+    background-color: var(--primary-color);
+    fill: wheat;
+}
+
+.social-media a::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid var(--primary-color);
+    transform: translateY(0) rotate(25deg);
+    opacity: 0;
+    transition: 200ms cubic-bezier(.42,0,44,1.68);
+
+    
+    
+}
+
+.social-media a:hover::before{
+    transform: translateY(-65) rotate(0);
+    opacity: 1;
+}
+
+.social-media a:hover::after{
+    transform: translateY(-42) rotate(0);
+    opacity: 1;
+}
+
+
+ a {
+    text-decoration: none;
+}
+
+
+ a:hover {
+    text-decoration: underline;
+    color: purple
+}
+
+
+a:active {
+    color: #580914;
+}
+
+
+.contact ul{
+    list-style: none;
+    padding: default;
+    color: black;
+}
+    
+
+
+
+
