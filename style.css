@@ -10,7 +10,7 @@ body {
 
 
 h1{
-    font-size: 70px;
+    
     text-align: center;
     line-height: 1.1;
 
@@ -19,13 +19,13 @@ h1{
 
 span {
     color: black;
-    font-family: poppins, sans-serif;
-    font-weight: 900;
+    
+
 }
 
 
 .nav {
-    text-align: right;
+    text-align: center;
    
 }
 
@@ -47,7 +47,7 @@ span {
 .nav a button {
     text-decoration: none;
     color: white;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -56,18 +56,22 @@ span {
 
 .about {
     background-color: #167caf;
-    background-image: url("images/clining\ equipment.jpg");
+    background-image: url("images/elphas.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color:rgb(240, 233, 233);
     text-align: center;
     background-blend-mode: multiply;
     background:min-width: 320px;
-    padding-top: 100px;
-    padding-bottom: 500px;
+    padding-top: 80px;
+    padding-bottom: 400px;
    
     
+}
 
+figcaption {
+    color: black;
+    font-style: italic;
 }
 
 
@@ -83,7 +87,7 @@ span {
 
 .card {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
@@ -103,12 +107,26 @@ span {
 }
 
 
-.why img {
-    max-width: 100%;
-    border-radius: 12px;
-    width: 400px;
-    padding:15px 10px;
+.fig {
+    padding: 0;
     display: flex;
+    background-color: #f5f5f5;
+    display: grid;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.fig img {
+    
+    width: 200px;
+    padding: 0;
+    display: flex;
+    background-color: #f5f5f5;
+    display: grid;
+    width: 100%;
+    object-fit: cover;
+
 }
 
 
@@ -123,7 +141,7 @@ form input, form textarea {
 button {
     
     color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 100px;
     cursor: pointer;
     margin-bottom: 20px;
@@ -165,7 +183,7 @@ footer {
 
 .social-media a {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 50%;
     box-sizing: border-box;
     height: 64px;
@@ -178,7 +196,7 @@ footer {
 }
 
 .social-media a svg {
-    height: 32px;
+    height: 24px;
 
 }
 
