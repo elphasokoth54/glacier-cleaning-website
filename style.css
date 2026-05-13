@@ -1,9 +1,9 @@
 body {
     font-family: poppins, sans-serif;
-    color: darkolivegreen;
-    line-height: 1.5;
-    margin: 0;
-    padding: 10px;
+    color: #1f2937;
+    line-height: 1.7;
+    margin: 10px;
+    padding: 0px;
 
     
 }
@@ -17,20 +17,22 @@ h1{
 }
 
 
-h2 {
-    color: rgb(215, 121, 121);
-}
 
 
-span {
-    color: black;
+
+
+ h1 span {
+    color: white;
+    background-color: purple;
+    border: 4px solid purple;
+    border-radius: 8px;
     
 
 }
 
 
 .nav {
-    text-align: center;
+    text-align: right;
    
 }
 
@@ -45,7 +47,7 @@ span {
 
 .nav li {
     display: inline-block;
-    padding: 0px 70px;
+    padding: 0px 2px;
     position: relative; 
     
 }
@@ -54,18 +56,16 @@ span {
 .nav a button {
     text-decoration: none;
     color: white;
-    font-weight: 600;
-    text-transform: uppercase;
-    background-color: #167caf;
-    padding: 15px;
-    border: 4px solid #167caf;
+    background-color: #72aeeb;
+    padding: 2px;
+    border: 2px solid #72aeeb;
 }
 
 
 
 
-.about {
-    background-color: #167caf;
+.hero {
+    background-color: #72aeeb;
     background-image: url("images/elphas.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,10 +73,16 @@ span {
     text-align: center;
     background-blend-mode: multiply;
     background:min-width: 320px;
-    padding-top: 80px;
-    padding-bottom: 400px;
+    padding-top: 0px;
+    padding-bottom: 100px;
    
     
+}
+
+
+.hero p {
+    padding-top: 400px;
+
 }
 
 figcaption {
@@ -91,23 +97,24 @@ figcaption {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: 0px;
 
 }
 
 .card li {
     background-color: white;
-    padding: 10px;
+    padding: 10px 0px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     list-style: none;;
-    border: darkolivegreen solid;
+    border: #444 solid;
+    text-align: left;
 }
 
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    color: darkblue;
+    color: black;
 }
 
 .why {
@@ -147,7 +154,7 @@ form input, form textarea {
     width: 100%;
     padding: 5px 10px;
     margin: 5px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #1f2937;
     border-radius: 15px;
 }
 
@@ -160,8 +167,8 @@ button {
     color: white;
     padding:5px 10px;
     border-radius: 4px;
-    border: 4px solid #167caf;
-    background-color: #167caf;
+    border: 4px solid #72aeeb;
+    background-color: #72aeeb;
     cursor: pointer;
     margin-bottom: 20px;
     
@@ -175,7 +182,7 @@ footer {
     background-color: #72aeeb;
     color: wheat;
     text-align: center;
-    padding: 5px 10px;
+    padding: 15px 20px;
     margin: 0;
     border-radius: 8px;
 
@@ -206,8 +213,8 @@ footer {
     padding: 10px;
     border-radius: 50%;
     box-sizing: border-box;
-    height: 64px;
-    width: 64px;
+    height: 36px;
+    width: 36px;
     flex-shrink: 0;
     display: grid;
     place-items: center;
@@ -216,7 +223,7 @@ footer {
 }
 
 .social-media a svg {
-    height: 24px;
+    height: 12px;
 
 }
 
