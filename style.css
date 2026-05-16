@@ -1,13 +1,22 @@
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: poppins, sans-serif;
     color: #1f2937;
     line-height: 1.7;
     
-    
-    box-sizing: border-box;
+       
+}
 
-
-    
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 
@@ -16,17 +25,7 @@ h1 {
     text-align: center;
     line-height: 1.1;
     margin-bottom: 2px;
-
 }
-
-
-h2 {
-    margin-bottom: 2px;
-
-}
-
-
-
 
 
 
@@ -83,6 +82,7 @@ h2 {
     background:min-width: 320px;
     padding-top: 0px;
     padding-bottom: 50px;
+    backgroud-width: 100%;
 
    
     
@@ -142,6 +142,7 @@ figcaption {
     border: #444 solid;
     text-align: left;
     margin-bottom: 15px;
+    
 }
 
 .card:hover {
@@ -173,21 +174,34 @@ figcaption {
 }
 
 .fig img {
-    
-    width: 200px;
+    height: auto;
+    width: 50px;
     padding: 0;
     display: flex;
     background-color: #f5f5f5;
     display: grid;
     width: 100%;
     object-fit: cover;
+    margin-left: 0px;
+
 
 }
 
-
-.how-it-works {
-    margin-bottom: 50px;
+#why-choose ol {
+    padding-left: 10px;
 }
+
+
+#how-it-works {
+    
+
+}
+
+#how-it-works ol {
+    padding-left: 10px;
+}
+
+
 
 
 form input, form textarea {
