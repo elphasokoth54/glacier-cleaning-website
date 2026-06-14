@@ -4,33 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css">
     <title>Glacier E.A Ltd</title>
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="nav">
-                <nav>
-        
-                    <ul>
-                        <li><a href="#about"><button type="button">About us</button></a></li>
-                        <li><a href="#services"> <button type="button">Our Services</button></a></li>
-                        <li><a href="#contact"> <button type="button">Contact Us</button></a></li>
-                    </ul>
-                </nav>
-        
-            </div>
-        
-        </header>
-        <main>
+        <header class="header">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+                                 
             <div>
                 <h1><span>Glacier E.A Ltd</span> <br> <strong>Professional Cleaning <br> Company</strong> <span>in
                         Nairobi</span></h1>
             </div>
             <div class="hero">
+            
                 <p>We Clean. You Relax.</p>
             </div>
-        
+            
+        </header>
+        <main>
+            
         
             <div class="about">
                 <section id="about">
@@ -41,12 +41,7 @@
                     <p>We train our staff to the highest standards to ensure that every job is done to perfection.</p>
                 </section>
             </div>
-            <div class="fig">
-                <figure>
-                    <img src="images/home.jpg" alt="stewards in uniform">
-                    <figcaption>Glacier E.A Ltd Cleaning Crew</figcaption>
-                </figure>
-            </div>
+            
             <div class="services">
                 <section id="services">
                     <h2 class="pm">What we Offer</h2>
@@ -68,32 +63,46 @@
                 </section>
         
             </div>
-            <section id="why-choose">
-                <h2>Why Choose Glacier E.A Ltd</h2>
-                <ol>
-                    <li>Professional and trained staff</li>
-                    <li>Affordable prices</li>
-                    <li>Eco-friendly products</li>
-                    <li>On-time service</li>
-                </ol>
-            </section>
-            <section id="how-it-works">
-                <h2>How It Works</h2>
-                <p>Choosing Glacier E.A Ltd is easy. Simply;</p>
-        
-                <ol>
-                    <li>Contact us through our website, phone, or email to discuss your cleaning needs and schedule a
-                        consultation.</li>
-                    <li>Our team will assess your space and provide you with a customized cleaning plan and a transparent quote.
-                    </li>
-                    <li>Once you approve the plan, we will schedule the cleaning service at a time that is convenient for you.
-                    </li>
-                    <li>Our professional cleaners will arrive on time and perform the cleaning service to the highest standards.
-                    </li>
-                    <li>After the service, we will follow up to ensure your satisfaction and address any feedback you may have.
-                    </li>
-                </ol>
-            </section>
+            <div class="choose1">
+                <section id="why-choose">
+                    <div class="choose">
+                        <h2>Why Choose Glacier E.A Ltd</h2>
+                        <ol>
+                            <li>Professional and trained staff</li>
+                            <li>Affordable prices</li>
+                            <li>Eco-friendly products</li>
+                            <li>On-time service</li>
+                        </ol>
+                    </div>
+                </section>
+                <div class="imagery">
+                    <figure class="fig">
+                        <img src="images/home.jpg" alt="stewards in uniform">
+                        <figcaption>Glacier E.A Ltd Cleaning Crew</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+                
+                <section id="how-it-works">
+                    <h2>How It Works</h2>
+                    <p>Choosing Glacier E.A Ltd is easy. Simply;</p>
+                
+                    <ol>
+                        <li>Contact us through our website, phone, or email to discuss your cleaning needs and schedule a
+                            consultation.</li>
+                        <li>Our team will assess your space and provide you with a customized cleaning plan and a transparent quote.
+                        </li>
+                        <li>Once you approve the plan, we will schedule the cleaning service at a time that is convenient for you.
+                        </li>
+                        <li>Our professional cleaners will arrive on time and perform the cleaning service to the highest standards.
+                        </li>
+                        <li>After the service, we will follow up to ensure your satisfaction and address any feedback you may have.
+                        </li>
+                    </ol>
+                </section>
+
+           
         
             <section id="testimonials">
                 <h2>What Our Clients Say</h2>
@@ -136,37 +145,45 @@
         
         </main>
         <footer>
-            <section>
+            <section class="footer">
                 <h2>Follow Us</h2>
                 <p>Stay connected with us on social media for updates, tips, and special offers.</p>
-                <div class="social-media">
-        
-        
-                    <a social-media="facebook" style="--primary-color:#106bff;" href="https://www.facebook.com/glacierea"> <img
-                            src="images/logo-facebook.svg" alt="Facebook logo"></a>
-                    <a social-media="whatsapp" style="--primary-color:green;" href="https://www.whatsapp.com/glacierea"> <img
-                            src="images/logo-whatsapp.svg" alt="WhatsApp logo"></a>
-                    <a social-media="instagram" style="--primary-color:#fe107c;" href="https://www.instagram.com/glacierea">
-                        <img src="images/logo-instagram.svg" alt="Instagram logo"></a>
-                    <a social-media="tiktok" style="--primary-color:#38142a;" href="https://www.tiktok.com/company/glacierea">
-                        <img src="images/logo-tiktok.svg" alt="TikTok logo"></a>
-        
-        
+                <div>
+                    <ul class="social-media">
+                        <li><a social-media="tiktok" style="--primary-color:#38142a;" href="https://www.tiktok.com/company/glacierea">
+                                <img src="images/logo-tiktok.svg" alt="TikTok logo"></a></li>
+                        <li><a social-media="instagram" style="--primary-color:#fe107c;" href="https://www.instagram.com/glacierea">
+                                <img src="images/logo-instagram.svg" alt="Instagram logo"></a></li>
+                        <li><a social-media="whatsapp" style="--primary-color:green;" href="https://www.whatsapp.com/glacierea"> <img
+                                    src="images/logo-whatsapp.svg" alt="WhatsApp logo"></a></li>
+                        <li>
+                            <a social-media="facebook" style="--primary-color:#106bff;" href="https://www.facebook.com/glacierea"> <img
+                                    src="images/logo-facebook.svg" alt="Facebook logo"></a>
+                        </li>
+                    </ul>
+
+                </div> 
+                <div class="address">
+                    <address >
+                        <p><a href="tel:+254722419516">Phone: +254 722 419 516</a></p>
+                        <p><a href="mailto:info@glacierea.com">Email: info@glacierea.com</a></p>
+                        <p>Address: Nairobi, Kenya</p>
+                    
+                        <p class="normal">&copy; 2026 Glacier E.A Ltd. All rights reserved.</p>
+                    </address>
+
                 </div>
+                    
         
-                <address class="address">
-                    <p><a href="tel:+254722419516">Phone: +254 722 419 516</a></p>
-                    <p><a href="mailto:info@glacierea.com">Email: info@glacierea.com</a></p>
-                    <p>Address: Nairobi, Kenya</p>
         
-                    <p>&copy; 2026 Glacier E.A Ltd. All rights reserved.</p>
-                </address>
+                
             </section>
         
         
         </footer>
 
     </div>
+    
     
    
     

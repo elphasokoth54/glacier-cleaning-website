@@ -1,0 +1,53 @@
+@media (max-width: 78rem ) {
+    /* 1200/16=75rem */
+    html {
+        /* 10/16*100=87.5% */
+        font-size: 60% ;
+    }
+}
+
+
+@media (max-width: 49rem ) {
+    html {
+        font-size: 55%;
+    }
+}
+
+
+@media (max-width: 36rem) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 28.9rem) {
+    html {
+        font-size: 37.5%;
+    }
+        .choose1 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            
+    
+    
+        }
+    
+}
+
+@media  (max-width: 24rem) {
+    html {
+            font-size: 29.5%;
+        }
+    
+        .choose1 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+    
+    
+    
+        }
+    
+}
+    

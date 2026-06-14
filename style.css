@@ -1,7 +1,12 @@
 * {
-    margin: o;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    
 }
 
 
@@ -9,14 +14,27 @@ body {
     font-family: poppins, sans-serif;
     color: #1f2937;
     line-height: 1.7;
+    font-size: 2.4rem;
     
        
 }
+
+
+
+
 
 .container {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
+    background-color: #ccd6e4 ;
+    padding: 20px;
+}
+
+.header {
+    height: auto;
+    min-height: 30rem;
+     
 }
 
 
@@ -24,49 +42,69 @@ h1 {
     
     text-align: center;
     line-height: 1.1;
-    margin-bottom: 2px;
+    /* font-size: 3.6rem; */
+    margin-bottom: 5rem;
+    
+   
 }
 
 
 
  h1 span {
     color: #2a9d8f;
-    border-radius: 8px;
+    
     
 
 }
 
-
-.nav {
-    text-align: right;
-    margin-bottom: 50px;
-   
+.navbar {
+   margin-bottom: 2rem;
+   position: sticky;
+   top: 0rem
 }
 
 
+.nav-links {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: right;
+        margin-bottom: 2rem;
 
-.nav ul {
+      
+
+}
+
+.navbar li {
     list-style: none;
-    
-    
 }
 
+/* comming to add logo soon */
 
-.nav li {
-    display: inline-block;
-    padding: 0px 2px;
-    position: relative; 
     
-}
-
-
-.nav a button {
+ 
+   
+.nav-links a {
     text-decoration: none;
     color: white;
     background-color: #72aeeb;
-    padding: 2px;
-    border: 2px solid #72aeeb;
+    padding: 1rem rem 2rem;
+    border: 10px solid #72aeeb;
+    border-radius: 4px;
+    /* width: 80%; */
+
 }
+
+.nav-links a:hover {
+    background-color: grey;
+    color: purple;
+    border: 10px solid grey;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+
+
 
 
 
@@ -81,8 +119,9 @@ h1 {
     background-blend-mode: multiply;
     background:min-width: 320px;
     padding-top: 0px;
-    padding-bottom: 50px;
+    padding-bottom: 5rem;
     backgroud-width: 100%;
+    
 
    
     
@@ -90,9 +129,9 @@ h1 {
 
 
 .hero p {
-    padding-top: 300px;
-    font-weight: 700px;
-    font-size: 50px;
+    padding-top: 30rem;
+    font-weight: 70rem;
+    font-size: 5rem;
 
 
 
@@ -100,15 +139,21 @@ h1 {
 
 
 .about {
-    margin-bottom: 5px;
+    margin-bottom: 2rem;
 
 
 
 }
 
+.imagery {
+    height: auto;
+    width: 30rem;
+}
+
 
 .fig {
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
+    padding: 4rem;
 }
 
 
@@ -121,155 +166,158 @@ figcaption {
 
 
 
-
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    padding: 0px;
-    margin-bottom: 50px;
-
-}
-
-
-
 .card li {
     background-color: white;
-    padding: 10px 0px;
+    padding: 1rem 0;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
     list-style: none;;
-    border: #444 solid;
+    border: 2px  solid rgb(222, 213, 213);
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 2rem;
     
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
     color: black;
 }
 
-.why {
-    padding: 20px;
-    background-color: #f5f5f5;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 50px;
 
-
-}
-
-
-.fig {
-    padding: 0;
-    display: flex;
-    background-color: #f5f5f5;
-    display: grid;
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 50px;
-
-}
 
 .fig img {
-    height: auto;
-    width: 50px;
-    padding: 0;
-    display: flex;
-    background-color: #f5f5f5;
-    display: grid;
     width: 100%;
-    object-fit: cover;
-    margin-left: 0px;
+    width: 30rem;
+    border-radius: 8px;
 
-
-}
-
-#why-choose ol {
-    padding-left: 10px;
-}
-
-
-#how-it-works {
+    
     
 
 }
 
-#how-it-works ol {
-    padding-left: 10px;
+
+.choose {
+    grid-column: 2/3;
 }
+
+.choose ol {
+    list-style: none;
+}
+
+
+.choose1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+
+
+}
+
 
 
 
 
 form input, form textarea {
     width: 100%;
-    padding: 5px 10px;
-    margin: 5px 0;
-    border: 1px solid #1f2937;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border: 0.1rem solid #1f2937;
     border-radius: 15px;
 }
 
 form {
-    border-radius: 10px;
-    margin-bottom: 20px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
 }
 
 button {
     
     color: white;
-    padding:5px 10px;
+    padding: 1.5rem 2rem;
     border-radius: 4px;
-    border: 4px solid #72aeeb;
+    border: 0.4rem solid #72aeeb;
     background-color: #72aeeb;
     cursor: pointer;
-    margin-bottom: 20px;
-    margin-bottom: 50px;
-    
-    
-    
-    
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+       
+}
+
+button:hover {
+    background-color: grey;
+    color: purple;
+    border: 0.4rem solid grey;
+    border-radius: 4px;
+    text-decoration: none;
 }
 
 
-footer {
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #72aeeb;
-    color: wheat;
-    text-align: center;
-    padding: 15px 20px;
+    color: black;
     margin: 0;
     border-radius: 8px;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
 
-
-}
-
-
-
-
-
-.address a{
-    font-style: normal;
-    line-height: 1.5;
-    margin-top: 20px;
-    color: black;
-   
     
+
+
 }
+
+.address {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.7;
+   
+}
+
+.normal {
+    font-style: normal;
+    line-height: 1.7;
+    font-size: 1.1rem;
+
+}
+
+.address a {
+    color: black;
+    text-decoration: none;
+    font-weight: 7rem;
+}
+
 
 
 .social-media {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 50px;
-    
+    gap: 2rem;
+    align-items: center;
+       
 }
+
+.social-media li {
+    list-style: none;
+}
+
+
 
 .social-media a {
     background-color: white;
-    padding: 10px;
+    padding: 1rem;
     border-radius: 50%;
     box-sizing: border-box;
     height: 36px;
@@ -282,7 +330,7 @@ footer {
 }
 
 .social-media a svg {
-    height: 12px;
+    height: 1.2rem;
 
 }
 
@@ -309,8 +357,8 @@ footer {
     position: absolute;
     height: 0;
     width: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
+    border-left: 0.8rem solid transparent;
+    border-right: 0.8rem solid transparent;
     border-top: 10px solid var(--primary-color);
     transform: translateY(0) rotate(25deg);
     opacity: 0;
@@ -347,7 +395,7 @@ a:active {
 }
 
 
-.contact ul{
+.contact ul {
     list-style: none;
     padding: default;
     color: black;
