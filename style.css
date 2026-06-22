@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: poppins, sans-serif;
-    color: #1f2937;
+    color: #010203;
     line-height: 1.7;
     font-size: 2.4rem;
     
@@ -27,7 +27,7 @@ body {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
-    background-color: #ccd6e4 ;
+    background-color: #ffff;
     padding: 20px;
 }
 
@@ -60,7 +60,8 @@ h1 {
 .navbar {
    margin-bottom: 2rem;
    position: sticky;
-   top: 0rem
+   top: 0rem;
+   
 }
 
 
@@ -96,8 +97,8 @@ h1 {
 }
 
 .nav-links a:hover {
-    background-color: grey;
-    color: purple;
+    background-color: #010205;
+    color: #ffff;
     border: 10px solid grey;
     border-radius: 4px;
     text-decoration: none;
@@ -121,6 +122,7 @@ h1 {
     padding-top: 0px;
     padding-bottom: 5rem;
     backgroud-width: 100%;
+    filter: grayscale(80%);
     
 
    
@@ -170,16 +172,17 @@ figcaption {
     background-color: white;
     padding: 1rem 0;
     border-radius: 12px;
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1.5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.5);
     list-style: none;;
-    border: 2px  solid rgb(222, 213, 213);
+    border: 2px  solid #f8fafc;
     text-align: left;
     margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
     color: black;
 }
@@ -190,6 +193,8 @@ figcaption {
     width: 100%;
     width: 30rem;
     border-radius: 8px;
+    filter: brightness(130%);
+    box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.5);
 
     
     
@@ -231,9 +236,16 @@ form input, form textarea {
 form {
     border-radius: 8px;
     margin-bottom: 2rem;
-    max-width: 1000px;
+    max-width: 100%;
     width: 90%;
     margin: auto;
+}
+
+input[type="text"], input[type="email"], textarea {
+    background-color: #f8fafc;
+    color: black;
+    font-size: 3.2rem;
+    border: 0.2rem solid #1f2937;
 }
 
 button {
@@ -242,7 +254,7 @@ button {
     padding: 1.5rem 2rem;
     border-radius: 4px;
     border: 0.4rem solid #72aeeb;
-    background-color: #72aeeb;
+    background-color: #2563eb;
     cursor: pointer;
     font-weight: 700;
     margin-bottom: 2rem;
@@ -252,7 +264,7 @@ button {
 
 button:hover {
     background-color: grey;
-    color: purple;
+    color: #000000;
     border: 0.4rem solid grey;
     border-radius: 4px;
     text-decoration: none;
@@ -263,13 +275,13 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #72aeeb;
-    color: black;
+    background-color: #2563eb;
+    color: #f8fafc;
     margin: 0;
     border-radius: 8px;
     justify-content: center;
     gap: 1.5rem;
-    max-width: 1000px;
+    max-width: 100%;
     width: 90%;
     margin: 0 auto;
     padding: 2rem;
@@ -337,10 +349,10 @@ button:hover {
 .social-media a::before {
     content: attr(social-media);
     position: absolute;
-    border-radius: 100%;
+    border-radius: 8px;
     background-color: var(--primary-color);
     text-decoration: none;
-    padding: 0.5px 1em;
+    padding: 0.1rem 1em;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     transform: translateY(-60px) rotate(25deg);
     opacity: 0;
