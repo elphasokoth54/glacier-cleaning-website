@@ -11,6 +11,10 @@ html {
 
 
 body {
+    background: radial-gradient(furthest-corner, rgb(0 0 0 1), rgb(100 125 100) url(images/elphas.jpg));
+    background: cover;
+    background-position: center;
+    position: relative;
     font-family: poppins, sans-serif;
     color: #010203;
     line-height: 1.7;
@@ -47,6 +51,13 @@ h1 {
     
    
 }
+.pm {
+    color: #f8f800;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+
 
 
 
@@ -168,16 +179,10 @@ figcaption {
 
 
 
-.card li {
-    background-color: white;
-    padding: 1rem 0;
-    border-radius: 12px;
-    box-shadow: 0 1.5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.5);
-    list-style: none;;
-    border: 2px  solid #f8fafc;
-    text-align: left;
-    margin-bottom: 2rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.pm-service {
+    text-align: center;
+    color: #010203;
+    font-weight: 400;
     
 }
 
@@ -202,7 +207,8 @@ figcaption {
 }
 
 .testimonials {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1rem;
     max-width: 140rem;
     justify-content: center;
@@ -216,6 +222,9 @@ figcaption {
 
 
 .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: sans-serif;
     width: 100%;
     height: 30rem;
@@ -230,18 +239,19 @@ figcaption {
 }
 
 
-.choose {
+.choose1 {
     grid-column: 2/3;
 }
 
-.choose ol {
+.choose li {
     list-style: none;
 }
 
 
-.choose1 {
+.grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr))
     gap: 2rem;
     align-items: center;
     justify-items: center;
